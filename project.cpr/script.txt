@@ -1,8 +1,0 @@
-<script src="./bower_components/angular-upload/angular-file-upload.js"></script>
-
-<script src="./bower_components/angular-upload/angular-file-upload.min.js"></script>
-
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/1.6.1/angular-file-upload-shim.min.js"></script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/1.6.1/angular-file-upload.js"></script>
