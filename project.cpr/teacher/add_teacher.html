@@ -1,0 +1,162 @@
+	<div>
+		<div class="row">
+ 				<div class="col-md-2">
+                	
+				</div>
+				<div class="col-md-2">
+                	
+				</div>
+				
+		<div>เพิ่มข้อมูลรายชื่อครู</div>
+		</div>
+		<br>
+		<form action="" method="post" name="form_student">
+			<div class="row">
+				<div class="col-md-2">
+					<label>รหัสครู</label>
+					<input type="text" class="form-control" name="user" placeholder="รหัสครู" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 			</div>
+
+			<br>
+ 		
+ 			<div class="row">
+ 				<div class="col-md-2">
+					<label>คำนำหน้า</label>
+ 					<select class="form-control" required="" autofocus="">
+ 						<option value="">คำนำหน้า</option>
+					  	<option value="นาย">นาย</option>
+					  	<option value="นาง">นาง</option>
+					  	<option value="นางสาว">นางสาว</option>
+					</select>
+ 				</div>
+ 				<div class="col-md-3">
+					<label>ชื่อครู</label>
+					<input type="text" class="form-control" name="user" placeholder="ชื่อครู" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label>นาสกุล</label>
+					<input type="text" class="form-control" name="user" placeholder="นาสกุล" autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-2">
+					<label>เพศ</label>
+					<select class="form-control" required="" autofocus="">
+						<option value="">เพศ</option>
+						<option value="ชาย">ชาย</option>
+						<option value="หญิง">หญิง</option>
+					</select>
+				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-3">
+					<label>เลขบัตรประจำตัวประชาชน</label>
+					<input type="text" class="form-control" name="user" placeholder="เลขบัตรประจำตัวประชาชน" autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-3">
+					<label>วันเดือนปีเกิด</label>
+					<input type="date" class="form-control" name="user" placeholder="วัน" autocomplete="off" required="" autofocus="">
+				</div>
+ 			</div>
+
+			<br>
+
+			<div class="row">
+ 				<div class="col-md-5">
+					<label>ที่อยู่</label>
+					<textarea class="form-control" rows="5" placeholder="ที่อยู่" autocomplete="off" required="" autofocus=""></textarea>
+ 				</div>
+ 			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col-md-4">
+					<label for="province">จังหวัด</label>
+					<select class="form-control" id="province" name="user" required="" autofocus="">
+						<option value="">จังหวัด</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label for="district">อำเภอ</label>
+					<select class="form-control" id="district" name="user" required="" autofocus="">
+						<option value="">อำเภอ</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label for="subdistrict">ตำบล</label>
+					<select class="form-control" name="user" id="subdistrict" required="" autofocus="">
+						<option value="">ตำบล</option>
+					</select>
+				</div>
+			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-2">
+					<label>รหัสไปรษณีย์</label>
+					<input type="text" class="form-control" name="user" placeholder="รหัสไปรษณีย์" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-2">
+					<label>เบอร์โทร</label>
+					<input type="text" class="form-control" name="user" placeholder="เบอร์โทรศัพท์" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-4">
+					<label>E-mail</label>
+					<input type="text" class="form-control" name="user" placeholder="E-mail" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-4">
+					<label>ตำแหน่ง</label>
+					<input type="text" class="form-control" name="user" placeholder="ตำแหน่ง" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-4">
+					<label>ระดับการศึกษา</label>
+					<input type="text" class="form-control" name="user" placeholder="ระดับการศึกษา" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label>เลือกรูปประจำตัว</label>
+					<input type="file" name="pic_std" multiple="[]" class="filestyle" data-input="false">
+ 				</div>
+ 			</div>
+ 			<hr>
+ 			<div class="row">
+ 				<div class="col-md-5">
+					<label>ที่อยู่ปัจจุบัน</label>
+					<textarea class="form-control" rows="5" placeholder="ที่อยู่ที่อยู่ปัจจุบัน" autocomplete="off" required="" autofocus=""></textarea>
+ 				</div>
+ 			</div>
+ 			
+ 			<div class="row">
+ 				<hr>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-md-2">
+                	
+				</div>
+				<div class="col-md-1">
+                	
+				</div>
+ 				<div class="col-md-2">
+                	<button class="btn btn-primary btn-l btn-block" type="submit" name="submit">
+                		<i class="fa fa fa-check fa-fw "></i>    บันทึกข้อมูล</button>
+				</div>
+				<div class="col-md-2">
+                	<button class="btn btn-warning btn-l btn-block" type="reset">
+                		<i class="fa fa-refresh fa-fw fa-lg"></i>    ล้างข้อมูล</button>
+				</div>
+ 			</div>
+		</form>
+	</div>

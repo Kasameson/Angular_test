@@ -1,0 +1,48 @@
+<div class="card mt++">
+    <lx-tabs indicator="green-200" layout="inline">
+        <lx-tab heading="เพิ่มข้อมูลรายชื่อนักเรียน">
+            <p class="p+">เพิ่มข้อมูลรายชื่อนักเรียน
+              <div flex-container="row" flex-gutter="24">
+                  <div flex-item="2">
+                      <lx-text-field label="รหัสนักเรียน">
+                          <input type="text" ng-model="config.host">
+                      </lx-text-field>
+                  </div>
+                </div>
+
+              <div flex-container="row" flex-gutter="24">
+                <div flex-item="2">
+                    <lx-text-field label="คำนำหน้า">
+                        <input type="text" ng-model="config.database">
+                    </lx-text-field>
+                </div>
+                  <div flex-item="4">
+                      <lx-text-field label="Username">
+                          <input type="text" ng-model="config.user">
+                      </lx-text-field>
+                  </div>
+
+                  <div flex-item>
+                      <lx-text-field label="Password">
+                          <input type="password" ng-model="config.password">
+                      </lx-text-field>
+                  </div>
+              </div>
+
+              <button class="btn btn--l btn--green btn--raised" lx-ripple
+                      ng-click="save()">
+                  Save
+              </button>
+
+            </p>
+        </lx-tab>
+
+        <lx-tab heading="Lorem Ipsum">
+            <p class="p+">Lorem Ipsum Content 2</p>
+        </lx-tab>
+
+        <lx-tab heading="Dolor">
+            <p class="p+">Lorem Ipsum Content 3</p>
+        </lx-tab>
+    </lx-tabs>
+</div>

@@ -1,0 +1,204 @@
+<div ng-controller="edit_stdCtrl">
+	<div class="container-fluid" ng-repeat="edit_std in edit_reg_std">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					แก้ไขข้อมูลรายชื่อนักเรียน {{edit_std.id_reg_student}}</h3>
+			</div>
+			<div class="panel-body">
+
+			<br>
+			<form name="edit_reg_std" class="form-horizontal" ng-controller="edit_std_Ctrl" enctype="multipart/form-data">
+				<div class="row">
+					<div class="col-md-2">
+						<label for="idstd">รหัสนักเรียน </label>
+						<input type="text" class="form-control" ng-model="edit_std.id_reg_student" id="idstd" placeholder="รหัสนักเรียน" autocomplete="off" readonly>
+					</div>
+				</div>
+
+			<br>
+
+				<div class="row">
+					<div class="col-md-2">
+						<label for="tname">คำนำหน้า</label>
+						<select class="form-control" ng-model="edit_std.title_reg_student" id="tname" autofocus="">
+							<option value="">คำนำหน้า</option>
+							<option value="เด็กชาย">เด็กชาย</option>
+							<option value="เด็กหญิง">เด็กหญิง</option>
+							<option value="นางสาว">นางสาว</option>
+							<option value="นาย">นาย</option>
+						</select>
+					</div>
+
+					<div class="col-md-3">
+						<label for="std_fname" class="text-right">ชื่อนักเรียน</label>
+						<input type="text" class="form-control" ng-model="edit_std.fname_reg_student" id="std_fname"  placeholder="ชื่อนักเรียน" autocomplete="off" autofocus="">
+					</div>
+					<div class="col-md-3">
+						<label for="std_lname">นาสกุล</label>
+						<input type="text" class="form-control" ng-model="edit_std.lname_reg_student" id="std_lname"  placeholder="นาสกุล" autocomplete="off" autofocus="">
+					</div>
+					<div class="col-md-2">
+						<label for="sex_std">เพศ</label>
+						<select class="form-control" ng-model="edit_std.gender_reg_student" id="sex_std" autofocus="">
+							<option value="">เพศ</option>
+							<option value="ชาย">ชาย</option>
+							<option value="หญิง">หญิง</option>
+						</select>
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-3">
+						<label for="ssn_std">เลขบัตรประจำตัวประชาชน</label>
+						<input type="text"  class="form-control" ng-model="edit_std.ssn_reg_student" id="ssn_std" placeholder="เลขบัตรประจำตัวประชาชน" autocomplete="off">
+					</div>
+					<div class="col-md-3">
+						<label for="birthday">วันเดือนปีเกิด 2535-10-16</label>
+						<input type="text"  class="form-control" ng-model="edit_std.birthday_reg_student" id="birthday" placeholder="วัน" autocomplete="off">
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-5">
+						<label for="address_std">ที่อยู่</label>
+						<textarea class="form-control" id="address_std" ng-model="edit_std.address_reg_student" rows="5" placeholder="ที่อยู่" autocomplete="off"></textarea>
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label for="province">จังหวัด</label>
+						<input type="text" class="form-control" ng-model="edit_std.province_reg_student" id="province" placeholder="จังหวัด" autofocus="">
+					</div>
+					<div class="col-md-4">
+						<label for="district">อำเภอ</label>
+						<input type="text" class="form-control" ng-model="edit_std.district_reg_student" id="district" placeholder="อำเภอ" autofocus="">
+					</div>
+					<div class="col-md-4">
+						<label for="subdistrict">ตำบล</label>
+						<input type="text" class="form-control" ng-model="edit_std.subdistrict_reg_student" id="subdistrict" placeholder="ตำบล" autofocus="" />
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-2">
+						<label for="postcode">รหัสไปรษณีย์</label>
+						<input type="text" class="form-control"  ng-model="edit_std.postcode_reg_student" id="postcode" placeholder="รหัสไปรษณีย์" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-2">
+						<label>เบอร์โทร</label>
+						<input type="tel" class="form-control" ng-model="edit_std.tell_reg_student" placeholder="เบอร์โทรศัพท์" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-4">
+						<label for="email_std">E-mail</label>
+						<input type="email" id="email_std" ng-model="edit_std.email_reg_student" class="form-control" placeholder="E-mail" autocomplete="off" required="" autofocus="">
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-2">
+						<label>ปีที่เข้าศึกษา</label>
+						<input type="text" class="form-control" ng-model="edit_std.semester_reg_student" placeholder="ปีที่เข้าศึกษา" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-1">
+						<label>ชั้น ม.</label>
+						<input type="text" class="form-control" ng-model="edit_std.class_reg_student" placeholder="ชั้น ม." autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-1">
+						<label>ห้อง</label>
+						<input type="text" class="form-control" ng-model="edit_std.room_reg_student" placeholder="ห้อง" autocomplete="off" required="" autofocus="">
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-5">
+						<label>สถานศึกษาเดิม</label>
+						<input type="text" class="form-control" ng-model="edit_std.oldschool_reg_student" placeholder="สถานศึกษาเดิม" autocomplete="off" required="" autofocus="">
+					</div>
+					<!--<div class="col-md-3">
+				   <label>เลือกรูปประจำตัว</label>
+				   <input type="file" ng-file="picstd.file" ng-model="pic_std" ng-file-select="onFileSelect($files)" class="filestyle" data-input="false">
+				</div>-->
+				</div>
+		<hr>
+				<div class="row">
+					<div class="col-md-5">
+						<label>ที่อยู่ปัจจุบัน</label>
+						<textarea class="form-control" rows="5" ng-model="edit_std.address1_reg_student" placeholder="ที่อยู่ที่อยู่ปัจจุบัน" autocomplete="off"></textarea>
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label>ชื่อบิดา</label>
+						<input type="text" class="form-control" ng-model="edit_std.father_reg_student" placeholder="ชื่อบิดา" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-3">
+						<label>อาชีพ</label>
+						<input type="text" class="form-control" ng-model="edit_std.prof_reg_student" placeholder="อาชีพ" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-2">
+						<label>เบอร์โทร</label>
+						<input type="text" class="form-control" ng-model="edit_std.father_tell_reg_student" placeholder="เบอร์โทร" autocomplete="off" required="" autofocus="">
+					</div>
+				</div>
+
+		<br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label>ชื่อมารดา</label>
+						<input type="text" class="form-control" ng-model="edit_std.mother_reg_student" placeholder="ชื่อมารดา" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-3">
+						<label>อาชีพ</label>
+						<input type="text" class="form-control" ng-model="edit_std.prom_reg_student" placeholder="อาชีพ" autocomplete="off" required="" autofocus="">
+					</div>
+					<div class="col-md-2">
+						<label>เบอร์โทร</label>
+						<input type="text" class="form-control" ng-model="edit_std.mother_tell_reg_student" placeholder="เบอร์โทร" autocomplete="off" required="" autofocus="">
+					</div>
+				</div>
+
+		<hr>
+
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-1">
+
+					</div>
+					<div class="col-md-2">
+						<button class="btn btn-primary btn-l btn-block" type="submit" ng-click="formsubmit_edit()">
+							<i class="fa fa fa-check fa-fw "></i>    บันทึกข้อมูล</button>
+					</div>
+					<div class="col-md-2">
+						<button class="btn btn-warning btn-l btn-block" type="reset">
+							<a href="#/class_student/class:{{edit_std.class_reg_student}}&&room:{{edit_std.room_reg_student}}" style="text-decoration:none !important;color:white;">
+								<i class="fa fa-angle-double-left fa-fw fa-lg"></i>    ย้อนกลับ
+							</a></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
