@@ -1,0 +1,197 @@
+	<div class="container-fluid" >
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					เพิ่มข้อมูลรายชื่อนักเรียน</h3>
+			</div>
+			<div class="panel-body">
+
+		<form name="add_std" class="form-horizontal" ng-controller="cprCtrl" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-2">
+					<label for="idstd">รหัสนักเรียน</label>
+					<input type="text" class="form-control" ng-model="idstd" id="idstd"  placeholder="รหัสนักเรียน" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-2">
+					<label for="tname">คำนำหน้า</label>
+ 					<select class="form-control" ng-model="tname" id="tname" required="" autofocus="">
+ 						<option value="">คำนำหน้า</option>
+					  	<option value="เด็กชาย">เด็กชาย</option>
+					  	<option value="เด็กหญิง">เด็กหญิง</option>
+					  	<option value="นางสาว">นางสาว</option>
+					  	<option value="นาย">นาย</option>
+					</select>
+				</div>
+ 				<div class="col-md-3">
+					<label for="std_fname" class="text-right">ชื่อนักเรียน</label>
+					<input type="text" class="form-control" ng-model="std_fname" id="std_fname"  placeholder="ชื่อนักเรียน" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label for="std_lname">นาสกุล</label>
+					<input type="text" class="form-control" ng-model="std_lname" id="std_lname"  placeholder="นาสกุล" autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-2">
+					<label for="sex_std">เพศ</label>
+					<select class="form-control" ng-model="sex_std" id="sex_std" required="" autofocus="">
+						<option value="">เพศ</option>
+						<option value="ชาย">ชาย</option>
+						<option value="หญิง">หญิง</option>
+					</select>
+				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-3">
+					<label for="ssn_std">เลขบัตรประจำตัวประชาชน</label>
+					<input type="text"  class="form-control" ng-model="ssn_std" id="ssn_std" placeholder="เลขบัตรประจำตัวประชาชน" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label for="birthday">วันเดือนปีเกิด 2535-10-16</label>
+					<input type="text"  class="form-control" ng-model="birth_std" id="birthday" placeholder="วัน" autocomplete="off" required="" autofocus="">
+ 				</div>
+			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-5">
+					<label for="address_std">ที่อยู่</label>
+					<textarea class="form-control" id="address_std" ng-model="address_std" rows="5" placeholder="ที่อยู่" autocomplete="off" required="" autofocus=""></textarea>
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+				<div class="col-md-4">
+					<label for="province">จังหวัด</label>
+					<input type="text" class="form-control" ng-model="province_std" id="province" required="" autofocus="" placeholder="จังหวัด">
+					</input>
+				</div>
+				<div class="col-md-4">
+					<label for="district">อำเภอ</label>
+					<input type="text" class="form-control" ng-model="district_std" id="district" ng-model="" required="" autofocus="" placeholder="อำเภอ">
+				</div>
+				<div class="col-md-4">
+					<label for="subdistrict">ตำบล</label>
+					<input type="text" class="form-control" ng-model="subdistrict_std" id="subdistrict" placeholder="ตำบล" required="" autofocus="" />
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-2">
+					<label for="postcode">รหัสไปรษณีย์</label>
+					<input type="text" class="form-control"  ng-model="postcode_reg_student" id="postcode" placeholder="รหัสไปรษณีย์" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-2">
+          			<label>เบอร์โทร</label>
+       				<input type="tel" class="form-control" ng-model="tel_std" placeholder="เบอร์โทรศัพท์" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-4">
+					<label for="email_std">E-mail</label>
+					<input type="email" id="email_std" ng-model="email_std" class="form-control" placeholder="E-mail" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-2">
+					<label>ปีที่เข้าศึกษา</label>
+					<input type="text" class="form-control" ng-model="semaster_std" placeholder="ปีที่เข้าศึกษา" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-1">
+					<label>ชั้น ม.</label>
+					<input type="text" class="form-control" ng-model="class_std" placeholder="ชั้น ม." autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-1">
+					<label>ห้อง</label>
+					<input type="text" class="form-control" ng-model="room_std" placeholder="ห้อง" autocomplete="off" required="" autofocus="">
+				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+ 				<div class="col-md-5">
+					<label>สถานศึกษาเดิม</label>
+					<input type="text" class="form-control" ng-model="old_school" placeholder="สถานศึกษาเดิม" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 					<!--<div class="col-md-3">
+					<label>เลือกรูปประจำตัว</label>
+					<input type="file" ng-file="picstd.file" ng-model="pic_std" ng-file-select="onFileSelect($files)" class="filestyle" data-input="false">
+ 				</div>-->
+ 			</div>
+ 			<hr>
+ 			<div class="row">
+				<div class="col-md-5">
+					<label>ที่อยู่ปัจจุบัน</label>
+					<textarea class="form-control" rows="5" ng-model="address_std1" placeholder="ที่อยู่ที่อยู่ปัจจุบัน" autocomplete="off"></textarea>
+ 				</div>
+ 			</div>
+
+			<br>
+
+ 			<div class="row">
+				<div class="col-md-4">
+					<label>ชื่อบิดา</label>
+					<input type="text" class="form-control" ng-model="fname_fastd" placeholder="ชื่อบิดา" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label>อาชีพ</label>
+					<input type="text" class="form-control" ng-model="prof_fstd" placeholder="อาชีพ" autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-2">
+					<label>เบอร์โทร</label>
+					<input type="text" class="form-control" ng-model="fa_telstd" placeholder="เบอร์โทร" autocomplete="off" required="" autofocus="">
+				</div>
+ 			</div>
+
+			<br>
+
+			<div class="row">
+ 				<div class="col-md-4">
+					<label>ชื่อมารดา</label>
+					<input type="text" class="form-control" ng-model="fname_mastd" placeholder="ชื่อมารดา" autocomplete="off" required="" autofocus="">
+ 				</div>
+ 				<div class="col-md-3">
+					<label>อาชีพ</label>
+					<input type="text" class="form-control" ng-model="prom_mstd" placeholder="อาชีพ" autocomplete="off" required="" autofocus="">
+ 				</div>
+				<div class="col-md-2">
+					<label>เบอร์โทร</label>
+					<input type="text" class="form-control" ng-model="ma_telstd" placeholder="เบอร์โทร" autocomplete="off" required="" autofocus="">
+				</div>
+ 			</div>
+
+			<hr>
+
+ 			<div class="row">
+ 				<div class="col-md-2">
+
+				</div>
+				<div class="col-md-1">
+
+				</div>
+ 				<div class="col-md-2">
+                	<button class="btn btn-primary btn-l btn-block" type="submit" ng-click="formsubmit(add_std.$valid)">
+                		<i class="fa fa fa-check fa-fw "></i>    บันทึกข้อมูล</button>
+				</div>
+				<div class="col-md-2">
+                	<button class="btn btn-warning btn-l btn-block" type="reset">
+                		<i class="fa fa-refresh fa-fw fa-lg"></i>    ล้างข้อมูล</button>
+				</div>
+ 			</div>
+    	</form>
+	</div>
+</div>
+</div>
