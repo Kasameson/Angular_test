@@ -1,4 +1,9 @@
-var app = angular.module('app', ['ngRoute','cprCtrl','project_cprCtrl','MyCtrl','initialValue'
+var app = angular.module('app', [
+ 'ngRoute',
+'cprCtrl',
+'project_cprCtrl',
+'MyCtrl',
+'initialValue'
  /* 'lumx',
 
     'app.controller.chart',
